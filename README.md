@@ -4,6 +4,10 @@ MVP:
 - Use proxy to spy on page source data from official site
 http://travel.state.gov/content/visas/en/immigrate/immigrant-process/approved/checkdate.html
 - grab the data and upload to firebase
+    - Convert upcomingmonth | this month to actual month number based on scrapper date
+    - Parse prority date data
+    - Validate JSON format
+    - insert to database
 - render priority date view for this month and next month
 
 More features for usability:
@@ -13,10 +17,9 @@ More features for usability:
 - browser notification 
 - progressive web app
 - integrate with IFTT, google calendar, Gmail
-- 
 
 Tech debt:
-- web scrapper: https://github.com/cheeriojs/cheerio
+- web scrapper: jsDom (window.upComingMonths)
 - create 4 versions of the same app in Angular v1.48, Angular v2, React, Polymer ,Web Components
 - tools: webpack, babel, node, ES6, D3
 - database: firebase
