@@ -1,0 +1,23 @@
+<!doctype html>
+<html ng-app="project">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.0/moment.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-resource.min.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js">
+   </script>
+    <script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/0.9.0/angularfire.min.js"></script>
+    <script src="project.js"></script>
+  </head>
+  <body>
+    <h2>GreenCard Priority Date app</h2>
+    <ul>
+      <li>Render all data in a table, sortable column: month, type, sponsor</li>
+      <li>User login, user profile, user priority dates count down</li>
+      <li>Graph rendering of approval dates</li>
+    </ul>
+    <div ng-view></div>
+  </body>
+</html>

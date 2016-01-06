@@ -1,0 +1,23 @@
+<input type="text" ng-model="projectList.search" class="search-query" id="projects_search"
+       placeholder="Search">
+<table>
+  <thead>
+  <tr>
+    <th>Month</th>
+    <th>Type</th>
+    <th>Sponsor</th>
+    <th>Country</th>
+    <th>Priority Date</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr ng-repeat="project in projectList.projects | filter:projectList.search | orderBy:'priority.date'">
+    <td>{{project.month.display}}</td>
+    <td>{{project.type}}</td>
+    <td>{{project.sponsor}}</td>
+    <td>{{project.country}}</td>
+    <td>{{project.priority.display}}</td>
+    </td>
+  </tr>
+  </tbody>
+</table>

@@ -9,8 +9,8 @@ request('http://travel.state.gov/content/visas/en/immigrate/immigrant-process/ap
       var upcomingmonth = $('script:contains("upComingMonths")')
                           .eq(1).text()
                           .split(';')[1]
-                          .split('\n\t\t\t')
-                          .join('')
+                          // .split('\n\t\t\t')
+                          // .join('')
                           .split('\n\t')
                           .join('')
                           .split('upComingMonths');
@@ -28,11 +28,18 @@ request('http://travel.state.gov/content/visas/en/immigrate/immigrant-process/ap
       var addQuote = function(match) {
         return '"' + match + '"';
       }
-      familysponsored = JSON.parse("{"+
+      familysponsored = JSON.parse('{'+
                           familysponsored.replace(regex, addQuote)
-                        +"}");
-      employmentBased = JSON.parse("{"+
+                        +'}');
+      employmentBased = JSON.parse('{'+
                           employmentBased.replace(regex, addQuote)
-                        +"}");
+                        +'}');
+      
   }
 });
+
+module.exports = {
+  upcoming: function() {
+    return Object.assign(familysponsored, employmentBased);
+  }
+}

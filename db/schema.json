@@ -1,0 +1,221 @@
+
+[{
+	"month": 'Jan',
+	"family": [
+		{
+			type: "f1",
+			list: [
+				{
+					country: "philippines",
+					date: "01JUN03"
+				}
+			]
+		}
+	 ],
+	 "employer": [
+		{
+			type: "first",
+			list: [
+				{
+					country: "philippines",
+					date: "01JUN03"
+				}
+			]
+		}
+	  ]
+},
+{
+	"month": 'Feb',
+	"family": [
+		{
+			type: "f1",
+			list: [
+				{
+					country: "philippines",
+					date: "01JUN03"
+				}
+			]
+		}
+	 ],
+	 "employer": [
+		{
+			type: "first",
+			list: [
+				{
+					country: "philippines",
+					date: "01JUN03"
+				}
+			]
+		}
+	  ]
+},
+]
+
+upComingMonths = {};
+
+	upComingMonths.familySponsered = {
+		F1 : {
+			philippines : "01JUN03", 
+			chinaMLB : "15MAY08", 
+			mexico : "22DEC94", 
+			india : "15MAY08", 
+			allExcept : "15MAY08"}, 
+		F2a : {
+			philippines : "01AUG14", 
+			chinaMLB : "01AUG14", 
+			mexico : "01JUN14", 
+			india : "01AUG14", 
+			allExcept : "01AUG14"}, 
+		F2b : {
+			philippines : "01JAN05", 
+			chinaMLB : "01APR09", 
+			mexico : "08SEP95", 
+			india : "01APR09", 
+			allExcept : "01APR09"}, 
+		F3 : {
+			philippines : "01NOV93", 
+			chinaMLB : "01AUG04", 
+			mexico : "01AUG94", 
+			india : "01AUG04", 
+			allExcept : "01AUG04"}, 
+		F4 : {
+			philippines : "22JUL92", 
+			chinaMLB : "22APR03", 
+			mexico : "01APR97", 
+			india : "22APR03", 
+			allExcept : "22APR03"}
+	}
+	upComingMonths.employmentBased = {
+		first : {
+			philippines : "Current", 
+			chinaMLB : "Current", 
+			mexico : "Current", 
+			india : "Current", 
+			allExcept : "Current"}, 
+		second : {
+			philippines : "Current", 
+			chinaMLB : "01FEB12", 
+			mexico : "Current", 
+			india : "01FEB08", 
+			allExcept : "Current"}, 
+		third : {
+			philippines : "01NOV07", 
+			chinaMLB : "01JUL12", 
+			mexico : "01OCT15", 
+			india : "15MAY04", 
+			allExcept : "01OCT15"}, 
+		otherWorkers : {
+			philippines : "01NOV07", 
+			chinaMLB : "01DEC06", 
+			mexico : "01OCT15", 
+			india : "15MAY04", 
+			allExcept : "01OCT15"}, 
+		fourth : {
+			philippines : "Current", 
+			chinaMLB : "Current", 
+			mexico : "Current", 
+			india : "Current", 
+			allExcept : "Current"}, 
+		certainReligiousWorkers : {
+			philippines : "U", 
+			chinaMLB : "U", 
+			mexico : "U", 
+			india : "U", 
+			allExcept : "U"}, 
+		fifth : {
+			philippines : "Current", 
+			chinaMLB : "08JAN14", 
+			mexico : "Current", 
+			india : "Current", 
+			allExcept : "Current"}, 
+		fifthb : {
+			philippines : "U", 
+			chinaMLB : "U", 
+			mexico : "U", 
+			india : "U", 
+			allExcept : "U"}
+	}
+	thisMonths = {};
+
+	thisMonths.familySponsered = {
+		F1 : {
+			philippines : "01JAN03", 
+			chinaMLB : "01APR08", 
+			mexico : "08DEC94", 
+			india : "01APR08", 
+			allExcept : "01APR08"}, 
+		F2a : {
+			philippines : "15JUN14", 
+			chinaMLB : "15JUN14", 
+			mexico : "08MAY14", 
+			india : "15JUN14", 
+			allExcept : "15JUN14"}, 
+		F2b : {
+			philippines : "01DEC04", 
+			chinaMLB : "01MAR09", 
+			mexico : "08SEP95", 
+			india : "01MAR09", 
+			allExcept : "01MAR09"}, 
+		F3 : {
+			philippines : "22OCT93", 
+			chinaMLB : "01JUL04", 
+			mexico : "08JUL94", 
+			india : "01JUL04", 
+			allExcept : "01JUL04"}, 
+		F4 : {
+			philippines : "01JUL92", 
+			chinaMLB : "22MAR03", 
+			mexico : "01APR97", 
+			india : "22MAR03", 
+			allExcept : "22MAR03"}
+	}
+	thisMonths.employmentBased = {
+		first : {
+			philippines : "Current", 
+			chinaMLB : "Current", 
+			mexico : "Current", 
+			india : "Current", 
+			allExcept : "Current"}, 
+		second : {
+			philippines : "Current", 
+			chinaMLB : "01FEB12", 
+			mexico : "Current", 
+			india : "01JUN07", 
+			allExcept : "Current"}, 
+		third : {
+			philippines : "01AUG07", 
+			chinaMLB : "15APR12", 
+			mexico : "01SEP15", 
+			india : "22APR04", 
+			allExcept : "01SEP15"}, 
+		otherWorkers : {
+			philippines : "01AUG07", 
+			chinaMLB : "01AUG06", 
+			mexico : "01SEP15", 
+			india : "22APR04", 
+			allExcept : "01SEP15"}, 
+		fourth : {
+			philippines : "Current", 
+			chinaMLB : "Current", 
+			mexico : "Current", 
+			india : "Current", 
+			allExcept : "Current"}, 
+		certainReligiousWorkers : {
+			philippines : "Current", 
+			chinaMLB : "Current", 
+			mexico : "Current", 
+			india : "Current", 
+			allExcept : "Current"}, 
+		fifth : {
+			philippines : "Current", 
+			chinaMLB : "15DEC13", 
+			mexico : "Current", 
+			india : "Current", 
+			allExcept : "Current"}, 
+		fifthb : {
+			philippines : "Current", 
+			chinaMLB : "15DEC13", 
+			mexico : "Current", 
+			india : "Current", 
+			allExcept : "Current"}
+	}
