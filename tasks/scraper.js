@@ -1,5 +1,6 @@
 var cheerio = require('cheerio');
 var request = require('request');
+var firebase = require('firebase');
 
 // request scrapper page
 request('http://travel.state.gov/content/visas/en/immigrate/immigrant-process/approved/checkdate.html',

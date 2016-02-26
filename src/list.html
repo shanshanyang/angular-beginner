@@ -11,7 +11,7 @@
   </tr>
   </thead>
   <tbody>
-  <tr ng-repeat="project in projectList.projects | filter:projectList.search | orderBy:'priority.date'">
+  <tr ng-repeat="project in projectList.projects | filter:projectList.search | orderBy:'priority.timestamp'">
     <td>{{project.month.display}}</td>
     <td>{{project.type}}</td>
     <td>{{project.sponsor}}</td>
